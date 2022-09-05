@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dasher</title>
+    <script src="../static/js/app.js"></script>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    {% for dasher in dashers %}
+     <div class="container">
+       <h1>{{ dasher['DasherID'] }}</h1>
+       <h2 id="personaldata">House: {{ dasher['House'] }} Year: {{ dasher['Year'] }} Streak: {{ dasher['Streak'] }} Total KM: {{ dasher['TotalKm'] }}</h2>
+     </div>
+     {% endfor %}
+
+     <div class="container">
+     <table class="rundata">
+      <tr>
+        <th>Date</th>
+        <th>Run No.</th>
+        <th>Position</th>
+        <th>Time</th>
+        <th>PB</th>
+      </tr>
+
+     {% for run in runs %}
+      <tr>
+        <td>{{ run['Date'] }}</td>
+        <td>{{ run['RunNo'] }}</td>
+        <td>{{ run['Pos'] }}</td>
+        <td>{{ run['Time'] }}</td>
+        <td>{{ run['pb'] }}</td>
+      </tr>
+     {% endfor %}
+     </table>
+     </div>
+    {% endblock %}
+  </body>
+</html>

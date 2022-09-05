@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Tutorial</title>
+    <script src="../static/js/app.js"></script>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find Your Times</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        {% for dasher in dashers %}
+          <a href="{{ url_for('dasher', dasher_id=dasher.DasherID)}}" id="get_info_button" onclick="render_info()">{{ dasher['DasherID'] }}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    {% endblock %}
+  </body>
+</html>

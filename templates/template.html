@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Flask Parent Template</title>
+  <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+</head>
+<body>
+    <header id="main-header">
+      <div class="container">
+        <img src="../static/images/habsdashlogo.jpg">
+      </div>
+    </header>
+
+
+
+      <footer id="main-footer">
+      <img src="../static/images/pridelogo.jpg" alt="Logo" id="pride">
+      <img src="../static/images/rainbowlogo.jpg" alt="Logo" id="rainbow">
+
+        <nav id="navbar">
+        <ul class="menu">
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+        </nav>
+      </footer>
+
+
+
+   {% block content %}
+   {% endblock %}
+
+</body>
+</html>

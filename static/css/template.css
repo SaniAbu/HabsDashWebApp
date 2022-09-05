@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: #fff;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  padding: 0;
+  padding-bottom: 500px;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+  text-align: center;
+}
+
+#main-header{
+  background-image: url("../images/habsdashlogo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#main-header img{
+  vertical-align: top;
+  width: 100%; /* max width */
+  opacity: 0;  /* make it transparent */
+}
+
+#navbar{
+  background-image: linear-gradient(to right, rgba(193, 170, 233, 0.6), rgba(245, 110, 224, 0.6));
+  color:#fff;
+}
+
+#navbar ul{
+  padding:0;
+  list-style: none;
+}
+
+#navbar li{
+  display:inline;
+}
+
+#navbar a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#pride{
+  max-width: 10%;
+  height: auto;
+}
+
+#rainbow{
+  max-width: 5%;
+  height: auto;
+}
+
+#main-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#main-footer img{
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+}
+
+.search-bar{
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 60px;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, rgba(193, 170, 233, 0.6), rgba(245, 110, 224, 0.6));
+  backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 20px 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+  font-style: italic;
+}
+
+.search-bar button img{
+  width: 50px
+}
+
+.search-bar button{
+  float: right;
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+
+
+
+/* TESTING DROPDOWN */
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-image: linear-gradient(to right, rgba(193, 170, 233, 0.6), rgba(245, 110, 224, 0.6));
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+  text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  margin:auto;
+  position: relative;
+  display: none;
+  background-color: #f6f6f6;
+  min-width: 30px;
+  max-width: 240px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+
+/* TABLE CSS */
+
+.rundata {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 8px;
+}
+
+
+.rundata td, .rundata th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.rundata tr:nth-child(even){background-color: #f2f2f2;}
+
+.rundata tr:hover {background-color: #ddd;}
+
+.rundata th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #000080;
+  color: white;
+}
+
+.table__header {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* PERSONAL DATA */
+
+#personaldata {
+  padding: 16px;
+}
